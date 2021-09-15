@@ -1,2 +1,3 @@
-# mmp2021
-A project with student reports
+# GeometricDeepLearning
+
+Project with student reports on the Geometric Deep Learning course
