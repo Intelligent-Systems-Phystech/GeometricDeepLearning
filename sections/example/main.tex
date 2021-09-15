@@ -1,0 +1,53 @@
+\documentclass[../../main.tex]{subfiles}
+
+\begin{document}
+
+\subsection{Motivation}
+
+Each report must be created in a separate subfolder. Take the "example" folder as an example of a report (please do not change).
+
+Here it is required to describe the problematic of the problem. Basic premises and results. It is important to indicate a list of references on this topic~\cite{AuthorYear}. All refernces put to the main.bib file.
+
+After writing your report, include the report to main.tex similar to the sample report.
+
+
+As an example, consider a linear regression problem.
+
+\subsection{Problem statement}
+
+Given a dataset of size~$m$:
+\[
+\label{eq:example:1}
+\begin{aligned}
+    \mathfrak{D} = \left\{\mathbf{x}_i, y_i\right\}_{i=1}^{m},
+\end{aligned}
+\]
+where~$\mathbf{x}_i \in \mathbb{R}^{n}, y_i \in \mathbb{R},$ and~$n$ is a size of feature space.
+
+\subsection{Problem solution}
+
+The solution for the linear regression task is:
+\[
+\label{eq:example:2}
+\begin{aligned}
+   \hat{\mathbf{w}} = \arg\min_{\mathbf{w}\in \mathbb{R}^{n}} \frac{1}{m}\sum_{i=1}^{m}\left(\textbf{w}^{\mathsf{T}}\textbf{x}_i - y_i\right)^2,
+\end{aligned}
+\]
+where~$\hat{\mathbf{w}}$ is a solution.
+
+\subsection{Code analysis}
+
+This section requires a description of the code. Source citation is required if this code is taken from open sources repositories.
+
+\subsection{Experiment}
+
+This section requires some experiment analysis. The chapter assumes some graphs with their descriptions~\ref{fig:example:1}.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=0.8\textwidth]{figures/fig1}
+\caption{Some description}
+\label{fig:example:1}
+\end{figure}
+
+\end{document}

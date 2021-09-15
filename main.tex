@@ -1,52 +1,40 @@
-\documentclass{article}
+\documentclass[a4paper,14pt]{article}
 
 \usepackage[utf8]{inputenc}
 \usepackage[english,russian]{babel}
-
-\usepackage{amsthm}
-\usepackage{a4wide}
-\usepackage{graphicx}
-\usepackage{caption}
-\usepackage{amssymb}
-\usepackage{amsmath}
-\usepackage{mathrsfs}
-\usepackage{euscript}
-\usepackage{graphicx}
-\usepackage{subfig}
-\usepackage{caption}
-\usepackage{color}
-\usepackage{bm}
-\usepackage{tabularx}
-\usepackage{adjustbox}
-\usepackage{url}
-\usepackage{tikz}
-\usetikzlibrary{arrows,automata}
-\usetikzlibrary{positioning}
-\usetikzlibrary{calc}
 \usepackage[toc,page]{appendix}
 
-\usepackage{comment}
-\usepackage{rotating}
-
-\usepackage{algorithmic}
-
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
 \numberwithin{equation}{section}
 
-\usepackage{autonum}
-
+\usepackage[
+backend=biber,
+style=numeric,
+sorting=ynt
+]{biblatex}
+\addbibresource{sections/*/main.bib}
 
 \usepackage{subfiles} % Best loaded last in the preamble
-\title{Geometric deep learning}
-\date{2021--2022}
 
+\title{Geometric Deep Learning}
+\date{}
 
 \begin{document}
 
     \maketitle
     \tableofcontents
+    
+    % Example chapter
     \clearpage
-    \section{Example Report (Put your Theme here)}
-    \subfile{sections/report0}{}
+    \section{Example of Report} % Report title
+    \subfile{sections/example/main}{} % Path to created report 
+    
+    % Other chapters
 
+    % Bibliography
+    \clearpage
+    \printbibliography
 \end{document}
 
