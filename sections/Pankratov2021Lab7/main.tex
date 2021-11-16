@@ -45,16 +45,16 @@ As in SVD, HOSVD keeps first columns for each $U^{(i)}$ to produce $\hat{U}^{(i)
 $$Y = Z \times \hat{U}^{(1)^T} \times \dots$$
 \subsection{Experimental results}
 For experimental simplicity every image tensor contains boolean values. Simple sequences of images were generated, one of projections of which onto 3-dimensional space are shown below.For multidimensional case they are mixed into one bicolor image:one of them is responsible for blue color and one of them for green.\\
-\includegraphics[scale=0.8]{1.png}
-\includegraphics[scale=0.8]{2.png}
+\includegraphics[scale=0.8]{figures/1.png}
+\includegraphics[scale=0.8]{figures/2.png}
 \\
 Cube transformation using using PCA.\\
-\includegraphics[scale=0.8]{4.png}\\
+\includegraphics[scale=0.8]{figures/4.png}\\
 That experiment was just for demonstration how the 4-dimensional cube will look like after PCA transformation. 
 
 \newpage
 Bicolor image transformation using HOPCA.\\
-\includegraphics[scale=0.8]{3.png}\\
+\includegraphics[scale=0.8]{figures/3.png}\\
 During the generation process the original cube coordinates were taken mod 15 where 15 is the image one coordinate size. A cube dividing into several areas was expected. As we can see, there are 3 colors: blue, green and black.
 \par 
 Considering binary images one of the blue and green colors has to disappear. After PCA one of their color values is strictly less than 
