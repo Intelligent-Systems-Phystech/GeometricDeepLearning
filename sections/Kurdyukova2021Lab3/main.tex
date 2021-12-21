@@ -1,0 +1,44 @@
+\documentclass[a4paper,14pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage[toc,page]{appendix}
+
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{esvect}
+
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\numberwithin{equation}{section}
+
+\usepackage[
+backend=biber,
+style=numeric,
+sorting=ynt
+]{biblatex}
+\addbibresource{sections/*/main.bib}
+
+\usepackage{subfiles} % Best loaded last in the preamble
+
+\title{Difference between ODE-Net approximation and ODEsolvers: Euler, RK4.}
+\date{}
+%\\versus\\Fourier transform (higher order)
+\begin{document}
+
+    \maketitle
+    \tableofcontents
+    
+    % Example chapter
+    \clearpage
+    \section{Report} % Report title
+    \subfile{sections/example/main}{} % Path to created report 
+    
+    % Other chapters
+
+    % Bibliography
+    \clearpage
+    \printbibliography
+\end{document}
+
